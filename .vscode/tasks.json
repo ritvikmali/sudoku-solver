@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "g++ build active file",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "compiled/${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Task to compile the active C++ file"
+    }
+  ]
+}

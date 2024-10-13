@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Compile and Run C++",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/compiled/${fileBasenameNoExtension}.exe",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "g++ build active file"
+    }
+  ]
+}
